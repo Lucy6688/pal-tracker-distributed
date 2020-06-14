@@ -1,7 +1,6 @@
 package io.pivotal.pal.tracker.backlog;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestOperations;
@@ -17,7 +16,7 @@ public class ProjectClient {
     private final String endpoint;
 
     public ProjectClient(RestOperations restOperations, String registrationServerEndpoint) {
-        this.restOperations= restOperations;
+        this.restOperations = restOperations;
         this.endpoint = registrationServerEndpoint;
     }
 
